@@ -3365,7 +3365,8 @@ returns an error code and \verb"make_thread" prints an error message
 and exits.
 
 The parameters of {\tt pthread\_create} take some
-explaining.  Starting with the second, {\tt Shared}
+explaining.  Starting with the fourth, {\tt void *arg},
+to which I pass {\tt shared}. {\tt Shared}
 is a structure I defined to contain values shared between threads.
 The following {\tt typedef} statement creates the new type:
 
